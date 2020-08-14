@@ -16,8 +16,8 @@ from django.utils.translation import ugettext_lazy as _
 
 # Thirdparty Libraries
 import requests
-from apps.usercustom.forms import PasswordRecoveryForm, PasswordSetForm
-from apps.usercustom.tokens import PASSWORD_RECOVERY_TOKEN
+from usercustom.forms import PasswordRecoveryForm, PasswordSetForm
+from usercustom.tokens import PASSWORD_RECOVERY_TOKEN
 
 # Local Folders Libraries
 from ..models import UserCustom

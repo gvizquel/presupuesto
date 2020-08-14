@@ -13,7 +13,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.views.generic import RedirectView
 
 # Thirdparty Libraries
-from apps.usercustom.tokens import ACCOUNT_ACTIVATION_TOKEN
+from usercustom.tokens import ACCOUNT_ACTIVATION_TOKEN
 
 # Local Folders Libraries
 from ..models import UserCustom

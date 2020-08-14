@@ -11,7 +11,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.views.generic import UpdateView
 
 # Thirdparty Libraries
-from apps.usercustom.forms import AvatarForm, PerfilForm
+from usercustom.forms import AvatarForm, PerfilForm
 
 # Local Folders Libraries
 from ..models import UserCustom

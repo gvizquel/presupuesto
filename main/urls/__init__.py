@@ -7,7 +7,7 @@ from django.urls import path
 
 urlpatterns = [
     # ============================ New URLs ============================ #
-    path('glosary/', include('apps.main.urls.glosary')),
-    path('sequence/', include('apps.main.urls.sequence')),
-    path('dpt/', include('apps.main.urls.dpt')),
+    path('glosary/', include('main.urls.glosary')),
+    path('sequence/', include('main.urls.sequence')),
+    path('dpt/', include('main.urls.dpt')),
 ]

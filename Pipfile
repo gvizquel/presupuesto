@@ -13,6 +13,7 @@ isort = "*"
 flake8 = "*"
 mypy = "*"
 pre-commit = "*"
+django-extensions = "*"
 
 [packages]
 django = "==2.2"
@@ -27,6 +28,7 @@ whitenoise = "*"
 django-cors-headers = "*"
 django-bootstrap4 = "*"
 django-bootstrap-datepicker-plus = "*"
+django-rosetta = "*"
 
 [requires]
 python_version = "3.8.5"

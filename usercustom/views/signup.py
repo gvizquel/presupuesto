@@ -16,8 +16,8 @@ from django.views.generic import CreateView
 
 # Thirdparty Libraries
 import requests
-from apps.usercustom.forms import PersonaCreationForm
-from apps.usercustom.tokens import ACCOUNT_ACTIVATION_TOKEN
+from usercustom.forms import PersonaCreationForm
+from usercustom.tokens import ACCOUNT_ACTIVATION_TOKEN
 
 # Local Folders Libraries
 from ..models import UserCustom

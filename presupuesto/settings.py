@@ -34,21 +34,34 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "loe.terna.net", "admin.loe.terna.net
 # Application definition
 
 INSTALLED_APPS = [
-    'apps.rosetta',
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
+    # Django Apps
+    'rosetta',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.sites',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.humanize',
     "ckeditor",
     'bootstrap4',
     'bootstrap_datepicker_plus',
-    "usercustom",
-    "main",
+
+    # # Third-Party Apps
+    'django_extensions',
+    'dal',
+    'dal_select2',
+
+    # Local Apps
+    'usercustom',
+    'main',
     "dominio",
     "producto",
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -65,6 +78,9 @@ MIDDLEWARE = [
 
 
 ROOT_URLCONF = "presupuesto.urls"
+
+# ==================================================================================== #
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 # ==================================================================================== #
 """Cada procesor de contexto de los templates tiene su razon de ser para mayor

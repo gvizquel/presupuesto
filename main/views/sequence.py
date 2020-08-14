@@ -6,7 +6,7 @@ from django.db import router, transaction
 from django.utils.translation import ugettext_lazy as _
 
 # Thirdparty Libraries
-from apps.main.views import (
+from main.views import (
     MainCreateView, MainDeleteView, MainDetailView, MainListView,
     MainUpdateView)
 
