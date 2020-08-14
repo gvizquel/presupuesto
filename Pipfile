@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==19.10b0"
+pep8 = "*"
+pylint = "*"
+pylint-django = "*"
+autopep8 = "*"
+isort = "*"
+flake8 = "*"
+mypy = "*"
+pre-commit = "*"
+
+[packages]
+django = "==2.2"
+psycopg2-binary = "*"
+pillow = "*"
+gunicorn = "*"
+django-ckeditor = "*"
+django-autocomplete-light = "*"
+requests = "*"
+django-environ = "*"
+whitenoise = "*"
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.8.5"
