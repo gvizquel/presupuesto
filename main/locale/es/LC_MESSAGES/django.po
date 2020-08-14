@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-03 09:15-0400\n"
+"PO-Revision-Date: 2019-11-26 14:18-0428\n"
+"Last-Translator: b'Gerson Vizquel <gvizquel@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: apps/main/models/sequence.py:13
+msgid "name"
+msgstr "nombre"
+
+#: apps/main/models/sequence.py:17 apps/main/views/sequence.py:19
+msgid "Prefix"
+msgstr "Prefijo"
+
+#: apps/main/models/sequence.py:19
+msgid "padding"
+msgstr ""
+
+#: apps/main/models/sequence.py:23
+msgid "initial"
+msgstr ""
+
+#: apps/main/models/sequence.py:27
+msgid "increment"
+msgstr ""
+
+#: apps/main/models/sequence.py:31
+msgid "reset"
+msgstr ""
+
+#: apps/main/models/sequence.py:35
+msgid "Last"
+msgstr "Ultimo"
+
+#: apps/main/models/sequence.py:36 apps/main/views/sequence.py:24
+msgid "Next"
+msgstr "Siguiente"
+
+#: apps/main/models/sequence.py:39
+msgid "sequence"
+msgstr "sequencia"
+
+#: apps/main/models/sequence.py:40
+msgid "sequences"
+msgstr "sequencias"
+
+#: apps/main/templates/main/delete_modal.html:20
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: apps/main/templates/main/delete_modal.html:22
+msgid "Accept"
+msgstr ""
+
+#: apps/main/templates/main/detail_modal.html:18
+#: apps/main/templates/main/main.html:196
+msgid "Close"
+msgstr "Cerrar"
+
+#: apps/main/templates/main/form.html:55 apps/main/templates/main/form.html:79
+msgid "Save"
+msgstr "Guardar"
+
+#: apps/main/templates/main/list.html:22
+msgid "Create"
+msgstr "Crear"
+
+#: apps/main/templates/main/list.html:31
+msgid "Actions"
+msgstr "Acciones"
+
+#: apps/main/templates/main/list.html:89
+msgid "en.lang "
+msgstr ""
+
+#: apps/main/templates/main/main.html:171
+msgid "Language"
+msgstr "Idioma"
+
+#: apps/main/templates/main/main.html:193
+msgid "Profile"
+msgstr "Perfil"
+
+#: apps/main/templates/main/main.html:233
+msgid "Version"
+msgstr "Versión"
+
+#: apps/main/templates/main/main.html:235
+msgid "All rights reserved."
+msgstr "Todos los derechos reservados"
+
+#: apps/main/templates/main/main.html:282
+msgid ""
+"Your account does not have the necessary privileges to access this section. "
+"To continue, log in with an account that has the necessary privileges."
+msgstr ""
+
+#: apps/main/templates/main/main.html:284
+msgid "Please login to visit this page."
+msgstr "Por favor ingrese para poder visitar esta página"
+
+#: apps/main/templates/main/menu.html:31
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: apps/main/templates/main/menu.html:37
+msgid "Farm Dashboard"
+msgstr "Tablero de la Finca"
+
+#: apps/main/templates/main/menu.html:43
+msgid "Flock Dashboard"
+msgstr ""
+
+#: apps/main/templates/main/menu.html:49
+msgid "Animal Dashboard"
+msgstr ""
+
+#: apps/main/views/main.py:53
+msgid "Detail"
+msgstr "Detalle"
+
+#: apps/main/views/main.py:74 apps/main/views/main.py:86
+msgid "Add"
+msgstr "Agregar"
+
+#: apps/main/views/main.py:99
+#, python-format
+msgid "The %(object)s, was succesfully created"
+msgstr ""
+
+#: apps/main/views/main.py:127
+msgid "Update"
+msgstr ""
+
+#: apps/main/views/main.py:140
+#, python-format
+msgid "The %(object)s, was succesfully updated"
+msgstr ""
+
+#: apps/main/views/main.py:157
+#, python-format
+msgid "Delete %(obj_name)s"
+msgstr ""
+
+#: apps/main/views/sequence.py:18
+msgid "Name"
+msgstr ""
+
+#: apps/main/views/sequence.py:20
+msgid "Padding"
+msgstr ""
+
+#: apps/main/views/sequence.py:21
+msgid "Initial"
+msgstr ""
+
+#: apps/main/views/sequence.py:22
+msgid "Increment"
+msgstr ""
+
+#: apps/main/views/sequence.py:23
+msgid "Reset"
+msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr "Eliminar"

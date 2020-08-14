@@ -10,6 +10,9 @@ from django.utils.translation import ugettext_lazy as _
 from ckeditor.fields import RichTextField
 from helpers import SobreEscribirArchivo
 
+# Own Libraries
+from main.models import MainModel
+
 
 def image_path_producto(instance, filename):
     """Ruta para almacenar las imagenes de los productos
@@ -18,7 +21,7 @@ def image_path_producto(instance, filename):
 
 
 # #################################################################################### #
-class Producto(models.Model):
+class Producto(MainModel):
     NACIONAL = "NACIONAL"
     IMPORTADO = "IMPORTADO"
     PRODUCT_ORGIN_CHOICES = [

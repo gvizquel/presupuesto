@@ -7,6 +7,9 @@ from django.utils.translation import ugettext_lazy as _
 from ckeditor.fields import RichTextField
 from helpers import SobreEscribirArchivo
 
+# Own Libraries
+from main.models import MainModel
+
 
 # class status_catalogo(models.Model):
 #     descripcion = models.CharField(max_length=50)
@@ -26,7 +29,7 @@ from helpers import SobreEscribirArchivo
 #     status = models.BooleanField(default=True)
 
 
-class Categoria(models.Model):
+class Categoria(MainModel):
     nombre = models.CharField(verbose_name=_("Product Name"), max_length=256)
     descripcion = RichTextField(
         verbose_name=_("Product Description"), blank=True, null=True

@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "loe.terna.net", "admin.loe.terna.net
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.rosetta',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,6 +42,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "ckeditor",
+    'bootstrap4',
+    'bootstrap_datepicker_plus',
+    "usercustom",
+    "main",
     "dominio",
     "producto",
 ]
@@ -112,6 +117,38 @@ DATABASES = {
     }
 }
 
+# ========================================================================== #
+""" Esta configuración hace disponible todas esta variables en cualquier
+plantilla
+"""
+PROJECT_NAME = 'Presupuesto Facil'
+SLOGAN = 'Software de Gestión de Presupuestos'
+PREFIX = 'Presupuesto'
+SUFIX = 'Facil'
+VERSION = '1.0'
+INITIAL_A = 'P'
+INITIAL_B = 'F'
+
+SETTINGS_EXPORT = [
+    'PROJECT_NAME',
+    'SLOGAN',
+    'PREFIX',
+    'SUFIX',
+    'VERSION',
+    'INITIAL_A',
+    'INITIAL_B'
+]
+
+
+# ==================================================================================== #
+""" Esta configuración define el modelo personalizado para auth.user. Tambien
+establece las rutas para algunas funciones.
+"""
+AUTH_USER_MODEL = "usercustom.UserCustom"
+LOGIN_URL = "usercustom:login"
+LOGOUT_REDIRECT_URL = "usercustom:login"
+LOGIN_REDIRECT_URL = "usercustom:profile"
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -150,6 +187,7 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+# ################################## rosetta Config ################################## #
 ROSETTA_EXCLUDED_APPLICATIONS = (
     "dal_select2",
     "django_extensions",
@@ -159,7 +197,6 @@ ROSETTA_EXCLUDED_APPLICATIONS = (
 )
 
 # #################################### Stic Config ################################### #
-
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = "/media/"

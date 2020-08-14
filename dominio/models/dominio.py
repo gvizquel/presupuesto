@@ -5,9 +5,12 @@ from django.utils.translation import ugettext_lazy as _
 # Thirdparty Libraries
 from ckeditor.fields import RichTextField
 
+# Own Libraries
+from main.models import MainModel
+
 
 # #################################################################################### #
-class Dominio(models.Model):
+class Dominio(MainModel):
     nombre = models.CharField(verbose_name=_("Domain Name"), max_length=256)
     razon_social = models.CharField(
         verbose_name=_("Domain Business name"), max_length=256

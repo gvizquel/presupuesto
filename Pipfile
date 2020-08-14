@@ -25,6 +25,8 @@ requests = "*"
 django-environ = "*"
 whitenoise = "*"
 django-cors-headers = "*"
+django-bootstrap4 = "*"
+django-bootstrap-datepicker-plus = "*"
 
 [requires]
 python_version = "3.8.5"

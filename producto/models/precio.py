@@ -9,9 +9,12 @@ from django.utils.translation import ugettext_lazy as _
 # Thirdparty Libraries
 from ckeditor.fields import RichTextField
 
+# Own Libraries
+from main.models import MainModel
+
 
 # #################################################################################### #
-class LotePrecio(models.Model):
+class PrecioLote(MainModel):
     dominio = models.ForeignKey(
         "dominio.Dominio",
         verbose_name=_("Domain"),
@@ -42,7 +45,7 @@ class LotePrecio(models.Model):
 
 
 # #################################################################################### #
-class DivisaPrecio(models.Model):
+class PrecioDivisa(MainModel):
     USD = "USD"
     COIN_CHOICES = [
         (USD, "USD"),
@@ -63,9 +66,9 @@ class DivisaPrecio(models.Model):
 
 
 # #################################################################################### #
-class DetallePrecio(models.Model):
+class PrecioDetalle(MainModel):
     lote = models.ForeignKey(
-        "LotePrecio",
+        "PrecioLote",
         verbose_name=_("Lot Price"),
         on_delete=models.PROTECT,
         db_index=True,
