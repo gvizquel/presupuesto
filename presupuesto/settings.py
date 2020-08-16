@@ -34,31 +34,28 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "loe.terna.net", "admin.loe.terna.net
 # Application definition
 
 INSTALLED_APPS = [
-    # Django Apps
-    'rosetta',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.sites',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.sitemaps',
-    'django.contrib.humanize',
-    "ckeditor",
-    'bootstrap4',
-    'bootstrap_datepicker_plus',
-
-    # # Third-Party Apps
-    'django_extensions',
-    'dal',
-    'dal_select2',
-
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.sites",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "django.contrib.sitemaps",
+    "django.contrib.humanize",
     # Local Apps
-    'usercustom',
-    'main',
-    "dominio",
-    "producto",
+    "apps.usercustom",
+    "apps.main",
+    "apps.producto",
+    "apps.dominio",
+    # Third-Party Apps
+    "simple_history",
+    "apps.rosetta",
+    "bootstrap_datepicker_plus",
+    "ckeditor",
+    "dal",
+    "dal_select2",
+    "bootstrap4",
 ]
 
 SITE_ID = 1
@@ -137,10 +134,10 @@ DATABASES = {
 """ Esta configuración hace disponible todas esta variables en cualquier
 plantilla
 """
-PROJECT_NAME = 'Presupuesto Facil'
+PROJECT_NAME = 'Tu Presupuesto'
 SLOGAN = 'Software de Gestión de Presupuestos'
-PREFIX = 'Presupuesto'
-SUFIX = 'Facil'
+PREFIX = 'Tu'
+SUFIX = 'Presupuesto'
 VERSION = '1.0'
 INITIAL_A = 'P'
 INITIAL_B = 'F'

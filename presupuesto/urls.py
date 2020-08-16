@@ -9,32 +9,27 @@ from django.utils.translation import ugettext_lazy as _
 from django.views.static import serve
 
 # Thirdparty Libraries
-from usercustom.views import ActivateLanguageView
-
+from apps.usercustom.views import ActivateLanguageView
 
 
 urlpatterns = [
-    path('', include('main.urls')),
-    path('', include('usercustom.urls')),
-    path('admin/', admin.site.urls),
-    path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT, }),
-    path('static/<path:path>', serve, {'document_root': settings.STATIC_ROOT, }),
-]
-
-urlpatterns += [
-    path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('rosetta/', include('rosetta.urls'))
+    path("", include("apps.main.urls")),
+    path("", include("apps.usercustom.urls")),
+    path("translate/", include("rosetta.urls")),
+    path("admin/", admin.site.urls),
+    path("media/<path:path>", serve, {"document_root": settings.MEDIA_ROOT}),
+    path("static/<path:path>", serve, {"document_root": settings.STATIC_ROOT}),
 ]
 
 urlpatterns += i18n_patterns(
-    path('i18n/', include('django.conf.urls.i18n')),
+    path("i18n/", include("django.conf.urls.i18n")),
     path(
-        '<language_code>/language/activate/',
+        "<language_code>/language/activate/",
         ActivateLanguageView.as_view(),
-        name='activate_language'
+        name="activate_language",
     ),
 )
 
 
-handler404 = 'usercustom.views.error_404'
-handler500 = 'usercustom.views.error_500'
+handler404 = "apps.usercustom.views.error_404"
+handler500 = "apps.usercustom.views.error_500"

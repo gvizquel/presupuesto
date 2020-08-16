@@ -29,6 +29,8 @@ django-cors-headers = "*"
 django-bootstrap4 = "*"
 django-bootstrap-datepicker-plus = "*"
 django-rosetta = "*"
+django-settings-export = "*"
+django-simple-history = "*"
 
 [requires]
 python_version = "3.8.5"
