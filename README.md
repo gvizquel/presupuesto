@@ -27,7 +27,4 @@ Generador de Presupuesto
 14. export PIPENV_INSTALL_TIMEOUT=9000
 15. ~/.pyenv/versions/3.8.5/bin/pipenv shell
 16. ~/.pyenv/versions/3.8.5/bin/pipenv install
-17. useradd -d /var/www/new_user  new_user
-18. pipenv shell
-19. pipenv install
-20. ./manage runserver
+17. ./manage runserver
