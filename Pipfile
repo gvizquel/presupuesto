@@ -31,6 +31,7 @@ django-bootstrap-datepicker-plus = "*"
 django-rosetta = "*"
 django-settings-export = "*"
 django-simple-history = "*"
+celery = "*"
 
 [requires]
 python_version = "3.8.5"
