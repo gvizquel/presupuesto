@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-18 11:34-0400\n"
-"PO-Revision-Date: 2019-12-11 20:09-0428\n"
-"Last-Translator: b'  <admin@fincasoft.com.ve>'\n"
+"POT-Creation-Date: 2020-08-17 11:32-0400\n"
+"PO-Revision-Date: 2020-08-17 11:37-0428\n"
+"Last-Translator: b'Gerson Vizquel <gvizquel@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.9.3\n"
+"X-Translated-Using: django-rosetta 0.9.4\n"
 
 #: apps/main/models/glosary.py:21 apps/main/models/glosary.py:28
 msgid "Term"
@@ -123,31 +123,29 @@ msgstr "Versión"
 msgid "All rights reserved."
 msgstr "Todos los derechos reservados"
 
-#: apps/main/templates/main/main.html:316
+#: apps/main/templates/main/main.html:293
 msgid ""
 "Your account does not have the necessary privileges to access this section. "
 "To continue, log in with an account that has the necessary privileges."
 msgstr ""
 
-#: apps/main/templates/main/main.html:321
+#: apps/main/templates/main/main.html:295
 msgid "Please login to visit this page."
 msgstr "Por favor ingrese para poder visitar esta página"
 
 #: apps/main/templates/main/menu.html:32
-msgid "Dashboard"
-msgstr "Tablero"
+#, fuzzy
+#| msgid "Update"
+msgid "Update Prices"
+msgstr "Actualizar"
 
 #: apps/main/templates/main/menu.html:38
-msgid "Farm Dashboard"
-msgstr "Tablero de la Finca"
+msgid "Products"
+msgstr ""
 
-#: apps/main/templates/main/menu.html:44
-msgid "Flock Dashboard"
-msgstr "Tablero del Rebaño"
-
-#: apps/main/templates/main/menu.html:50
-msgid "Animal Dashboard"
-msgstr "Tablero de Animales"
+#: apps/main/templates/main/menu.html:44 apps/main/templates/main/menu.html:50
+msgid "Budgets"
+msgstr "Presupuestos"
 
 #: apps/main/views/main.py:48
 msgid "Detail"
@@ -191,3 +189,15 @@ msgstr "Incremento"
 #: apps/main/views/sequence.py:27
 msgid "Reset"
 msgstr "Reiniciar"
+
+#~ msgid "Dashboard"
+#~ msgstr "Tablero"
+
+#~ msgid "Farm Dashboard"
+#~ msgstr "Tablero de la Finca"
+
+#~ msgid "Flock Dashboard"
+#~ msgstr "Tablero del Rebaño"
+
+#~ msgid "Animal Dashboard"
+#~ msgstr "Tablero de Animales"

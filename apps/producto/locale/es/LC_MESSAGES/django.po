@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-17 11:32-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: apps/producto/models/catalogo.py:32 apps/producto/models/producto.py:41
+msgid "Product Name"
+msgstr ""
+
+#: apps/producto/models/catalogo.py:34 apps/producto/models/producto.py:43
+msgid "Product Description"
+msgstr ""
+
+#: apps/producto/models/catalogo.py:44
+msgid "Category"
+msgstr ""
+
+#: apps/producto/models/catalogo.py:45
+msgid "Categories"
+msgstr ""
+
+#: apps/producto/models/precio.py:19
+msgid "Domain"
+msgstr ""
+
+#: apps/producto/models/precio.py:27
+msgid "Lot Price Publication Date"
+msgstr ""
+
+#: apps/producto/models/precio.py:30
+msgid "Lot Price File"
+msgstr ""
+
+#: apps/producto/models/precio.py:42 apps/producto/models/precio.py:43
+#: apps/producto/models/precio.py:73
+msgid "Lot Price"
+msgstr ""
+
+#: apps/producto/models/precio.py:55
+msgid "Coin price publication date"
+msgstr ""
+
+#: apps/producto/models/precio.py:57 apps/producto/models/precio.py:89
+msgid "Amount"
+msgstr ""
+
+#: apps/producto/models/precio.py:64 apps/producto/models/precio.py:96
+msgid "Detailed Price"
+msgstr ""
+
+#: apps/producto/models/precio.py:65 apps/producto/models/precio.py:97
+msgid "Detailed Prices"
+msgstr ""
+
+#: apps/producto/models/precio.py:82 apps/producto/models/producto.py:72
+msgid "Product"
+msgstr ""
+
+#: apps/producto/models/producto.py:37
+msgid "Product Domain"
+msgstr ""
+
+#: apps/producto/models/producto.py:39
+msgid "Product Code"
+msgstr ""
+
+#: apps/producto/models/producto.py:40
+msgid "Product Bar Code"
+msgstr ""
+
+#: apps/producto/models/producto.py:47
+msgid "Product Category"
+msgstr ""
+
+#: apps/producto/models/producto.py:55
+msgid "Product Publication Date"
+msgstr ""
+
+#: apps/producto/models/producto.py:58
+msgid "Product Image"
+msgstr ""
+
+#: apps/producto/models/producto.py:73
+msgid "Products"
+msgstr ""
+
+#: apps/producto/tasks/upload_product.py:41
+msgid "Reporte de Carga de Lote de Etiquetas"
+msgstr ""
+
+#: apps/producto/tasks/upload_product.py:77
+msgid ""
+"Se han procesado {} registros del archivo de carga de etiquetas.<br> Por "
+"favor revise el archivo adjunto para ver el resultado del proceso"
+msgstr ""
