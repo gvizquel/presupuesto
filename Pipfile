@@ -32,6 +32,7 @@ django-rosetta = "*"
 django-settings-export = "*"
 django-simple-history = "*"
 celery = "*"
+redis = "*"
 
 [requires]
 python_version = "3.8.5"

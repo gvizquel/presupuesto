@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
+# Standard Libraries
 import os
 
 # Django Libraries
@@ -17,6 +18,7 @@ from django.utils.translation import gettext_lazy as _
 
 # Thirdparty Libraries
 import environ
+from kombu import Queue
 
 ENVIROMENT = environ.Env()  # set default values and casting
 environ.Env.read_env()  # reading .env file
@@ -76,6 +78,36 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "presupuesto.urls"
 
+
+# ================================== CELERY CONFIG =================================== #
+EAGER_TASKS = True
+# run celery tasks synchronously during development
+CELERY_TASK_ALWAYS_EAGER = True
+CELERY_TASK_EAGER_PROPAGATES = True
+RABBITMQ_URL = "amqp://localhost"
+
+CELERY_BROKER_URL = RABBITMQ_URL
+CELERY_BROKER_TRANSPORT = "amqp"
+CELERY_BROKER_POOL_LIMIT = None
+CELERY_TASK_SERIALIZER = "json"
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_TASK_SOFT_TIME_LIMIT = 60
+
+CELERY_TASK_ACKS_LATE = True
+CELERY_WORKER_PREFETCH_MULTIPLIER = 1
+
+CELERY_ENABLE_REMOTE_CONTROL = True
+CELERY_SEND_EVENTS = True
+
+CELERY_TASK_DEFAULT_QUEUE = "default"
+CELERY_TASK_CREATE_MISSING_QUEUES = False
+
+CELERY_TASK_QUEUES = (
+    Queue("default"),
+    Queue("priority_high"),
+)
+
+
 # ==================================================================================== #
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
@@ -134,22 +166,22 @@ DATABASES = {
 """ Esta configuración hace disponible todas esta variables en cualquier
 plantilla
 """
-PROJECT_NAME = 'Tu Presupuesto'
-SLOGAN = 'Software de Gestión de Presupuestos'
-PREFIX = 'Tu'
-SUFIX = 'Presupuesto'
-VERSION = '1.0'
-INITIAL_A = 'P'
-INITIAL_B = 'F'
+PROJECT_NAME = "Tu Presupuesto"
+SLOGAN = "Software de Gestión de Presupuestos"
+PREFIX = "Tu"
+SUFIX = "Presupuesto"
+VERSION = "1.0"
+INITIAL_A = "P"
+INITIAL_B = "F"
 
 SETTINGS_EXPORT = [
-    'PROJECT_NAME',
-    'SLOGAN',
-    'PREFIX',
-    'SUFIX',
-    'VERSION',
-    'INITIAL_A',
-    'INITIAL_B'
+    "PROJECT_NAME",
+    "SLOGAN",
+    "PREFIX",
+    "SUFIX",
+    "VERSION",
+    "INITIAL_A",
+    "INITIAL_B",
 ]
 
 
