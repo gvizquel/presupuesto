@@ -30,7 +30,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG = ENVIROMENT("DEBUG")
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "loe.terna.net", "admin.loe.terna.net"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "loe.terna.net", "admin.loe.terna.net","192.168.10.146"]
 
 
 # Application definition
@@ -118,6 +118,7 @@ detalle: https://docs.djangoproject.com/en/2.2/ref/templates/api/
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
+        'DIRS': [os.path.join(BASE_DIR, 'apps/producto/templates')],
         # 'DIRS': [],
         # 'APP_DIRS': True,
         "OPTIONS": {
