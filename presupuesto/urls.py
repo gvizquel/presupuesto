@@ -29,7 +29,9 @@ urlpatterns += i18n_patterns(
         name="activate_language",
     ),
 )
-
+if settings.DEBUG is True:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
 
 handler404 = "apps.usercustom.views.error_404"
 handler500 = "apps.usercustom.views.error_500"
