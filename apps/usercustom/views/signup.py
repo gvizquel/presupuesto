@@ -88,7 +88,7 @@ class SignUpView(CreateView):
         send_mail(
             subject,
             message_body,
-            "noresponder@fincasoft.com.ve",
+            "noresponder@tupresupuesto.com.ve",
             ["gvizquel@gmail.com"],
             fail_silently=False,
         )
