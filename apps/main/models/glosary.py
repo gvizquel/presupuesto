@@ -14,7 +14,7 @@ from simple_history.models import HistoricalRecords
 class Glosary(models.Model):
     """
     Modelo administrativo: Almacena la definición de los terminos utilizados en
-    FincaSoft
+    TuPresupuesto
     """
 
     history = HistoricalRecords()
